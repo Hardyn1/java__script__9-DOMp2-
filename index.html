@@ -52,12 +52,17 @@
             height: 400px;
             background: yellow;
             padding: 50px 0 0 50px;
+            border: 10px solid black;
         }
         #cube {
             width: 200px;
             height: 200px;
             overflow: scroll;
             background: green;
+        }
+
+        body {
+            margin: 0;
         }
     </style>
 
@@ -70,9 +75,88 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates quo eveniet, et cum suscipit dicta officiis officia quibusdam. In voluptatem nemo delectus unde eveniet neque at eligendi amet magnam autem?
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates quo eveniet, et cum suscipit dicta officiis officia quibusdam. In voluptatem nemo delectus unde eveniet neque at eligendi amet magnam autem?
         </div>
+        <button id="cube-btn">Move up</button>
     </div>
 
+
+    <div id="div-ascent">
+        <ul>
+            <li><p>Click me !!!</p></li>
+            <li><p>Click me !!!</p></li>
+            <li id="liAscent"><p>Click me !!!</p></li>
+            <li><p>Click me !!!</p></li>
+            <li><p>Click me !!!</p></li>
+        </ul>
+    </div>
+
+    <!-- ДЕЛЕГИРОВАНИЕ СОБЫТИЙ -->
+
+    <style>
+        #cube-wrapper {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-basis: 100%;
+            flex-wrap: wrap;
+        }
+
+        .cube {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+    </style>
+
+     <div id="cube-wrapper">
+        <div class="cube">1</div>
+        <div class="cube">2</div>
+        <div class="cube">3</div>
+        <div class="cube">4</div>
+        <div class="cube">5</div>
+        <div class="cube">6</div>
+        <div class="cube">7</div>
+        <div class="cube">8</div>
+        <div class="cube">9</div>
+     </div>
+
+     <a href="https://ya.ru/" id="link">Yandex</a>
+
+     <style>
+        #divvs {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+        }
+     </style>
+
+     <div id="divvs">
+
+     </div>
+
+     <button id="divvs-btn">
+        Click me
+     </button>
+
+     <input type="text" id="input">
+
+     <!-- ИНТЕРФЕЙСНЫЕ СОБЫТИЯ ФОРМЫ -->
+
+      <form action="">
+        <input type="text" id="input-txt">
+        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+        <input type="checkbox" id="checkbox">
+        <button id="form-btn">click</button>
+      </form>
+
     <script src="main.js"></script>
-    <script src="cssInJss/stylesIn.js"></script>
+    <script src="style+offset/style_offset.js"></script>
 </body>
 </html>
